@@ -9,6 +9,15 @@
 </head>
 <body>
     <div class="container">
+        <div class="desc">
+            <h3>How to play?</h3>
+            <ol>
+                <li>Click on start Game</li>
+                <li>Two random cards will be drawn</li>
+                <li>Keep drawing NEW CARD until game over</li>
+            </ol>
+        </div>
+    <div class="game-container">
         <div class="heading">
             <h1>Black Jack Game</h1>
             <h3 id="message-el">Wanna play a round?</h3>    
@@ -18,7 +27,19 @@
 
         <button class="start-btn" onclick="startGame()">START GAME</button>
         <button class="newcard-btn" onclick="newCard()">NEW CARD</button>
+
+        <p id="player-el"></p>
     </div>
+
+    <div class="desc">
+        <h3>Game Rules</h3>
+        <ol>
+            <li>If sum of all drawn cards equals 21, Bingo You've won!!</li>
+            <li>If your sum exceeds 21, you're out!!</li>
+            <li>If it's less than 21, you still have chances left so draw your next cards.</li>
+        </ol>
+    </div>
+</div>
      <script src="index.js"></script>
 </body>
 </html>
