@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
 
+*{
+  padding: 0;
+  margin: 0;
+}
 
   h1 {
     color: goldenrod;
@@ -11,42 +15,67 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   .container {
+    margin-top: 5%;
     height: fit-content;
+    width: 100vw;
     display: flex;  
     justify-content: space-around;
+    align-items: center;
   }
-  .desc > h3 {
+   h3 {
     text-align: center;
   } 
-  .desc {
+  /* .desc {
     background-color: rgb(243, 243, 243);
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     word-spacing: 1px;
     line-height: 25px;
     padding: 10px 10px;
-    margin:150px auto;
+    margin:50px auto;
     width:330px;
-    height: 250px;
+    height: 300px;
+    font-size: 18px;
+    border-radius: 10px;
+  } */
+
+  .desc {
+    width: 20%;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left:50px;
+    padding-right:50px;
+    height: 300px;
     font-size: 18px;
     border-radius: 10px;
   }
+
+
   .game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px;
-    margin:100px 15px;
+    /* margin: 20px; */
     color: aliceblue;
-    height: fit-content;
+    height:510px;
     background-color: rgb(146, 82, 82);
     /* max-width: 600px; */
-    width: 500px;
+    width: 400px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 
 h3{
-    margin-top: 25px ;
+    margin: 25px ;
+}
+#message-el{
+  height:70px;
 }
 
 .heading {
@@ -70,7 +99,7 @@ button {
 }
 
 button:hover {
-  transform: translateY(-4px); /* Adjusted transform value to move the button up slightly */
+  transform: scale(4px); /* Adjusted transform value to move the button up slightly */
 }
 
 
@@ -81,7 +110,7 @@ button:hover {
   .desc{
     width: 260px;
     height: fit-content;
-    margin: 20px;
+    margin: 50px 5px;
   }
   .container{
     display: flex;
@@ -90,13 +119,14 @@ button:hover {
     align-items: center;
   }
     .game-container {
-      margin: atuo 10px;
+        margin:50px 5px;
         width: 260px;
         font-size: 20px;
-        height: fit-content;
+        height: 550px;
     }
 
     button{
+        margin: 4px;
         width: 120px;
         height: 50px;
         font-size: 16px;

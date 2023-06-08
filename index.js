@@ -59,7 +59,7 @@ else {
     isAlive = false;
     
 }
-if(!hasBlackJack && !isAlive) {coin -=10; console.log("- kia"); player.coins = +player.coins + +coin}
+if(!hasBlackJack && !isAlive) {coin -=10; player.coins = +player.coins + +coin}
 playerEl.textContent = player.name + ": " + +player.coins + " coins"
 messageEl.textContent = message;
 
@@ -67,7 +67,7 @@ messageEl.textContent = message;
 
 function newCard() {
     if(isAlive && !hasBlackJack) {
-        console.log("getting new card")
+    // console.log("getting new card")
     card = getRandomCard();
     sum+=card;
     cards.push(card)
